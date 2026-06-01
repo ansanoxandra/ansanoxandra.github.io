@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>XANDRA NICOLE ANSANO | Student Portfolio</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, sans-serif;
+            scroll-behavior:smooth;
+        }
+
+        body{
+            background:#1a1a1a;
+            color:#f5ede4;
+        }
+
+        /* NAVIGATION */
+
+        nav{
+            background:#0a0a0a;
+            color:white;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            padding:15px 8%;
+            position:fixed;
+            width:100%;
+            top:0;
+            z-index:1000;
+            box-shadow:0 5px 10px rgba(0,0,0,0.4);
+        }
+
+        nav h2{
+            color:#c9956c;
+            font-size:28px;
+        }
+
+        nav ul{
+            display:flex;
+            list-style:none;
+            gap:25px;
+        }
+
+        nav ul li a{
+            text-decoration:none;
+            color:white;
+            transition:0.3s;
+            font-weight:bold;
+        }
+
+        nav ul li a:hover{
+            color:#c9956c;
+        }
+
+        /* HOME */
+
+        .home{
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            text-align:center;
+            flex-direction:column;
+            background:linear-gradient(to right,#0a0a0a,#1a1a1a);
+            color:white;
+            padding:20px;
+        }
+
+        /* PROFILE PICTURE */
+
+        .profile-pic{
+            width:230px;
+            height:230px;
+            object-fit:cover;
+            border-radius:50%;
+            border:6px solid #c9956c;
+            padding:6px;
+            background:#1a1a1a;
+            margin-bottom:25px;
+
+            box-shadow:
+            0 0 15px rgba(201,149,108,0.5),
+            0 0 30px rgba(201,149,108,0.3);
+
+            transition:0.4s ease;
+        }
+
+        .profile-pic:hover{
+            transform:scale(1.06) rotate(2deg);
+
+            box-shadow:
+            0 0 20px rgba(201,149,108,0.9),
+            0 0 50px rgba(201,149,108,0.7);
+        }
+
+        /* HOME TEXT */
+
+        .home h1{
+            font-size:55px;
+            animation:glow 2s infinite alternate;
+        }
+
+        @keyframes glow{
+
+            from{
+                text-shadow:0 0 10px #c9956c;
+            }
+
+            to{
+                text-shadow:
+                0 0 20px #c9956c,
+                0 0 40px #c9956c;
+            }
+        }
+
+        .home h3{
+            margin-top:10px;
+            color:#c9956c;
+            font-size:28px;
+        }
+
+        .home p{
+            margin-top:20px;
+            max-width:700px;
+            line-height:1.8;
+            font-size:18px;
+        }
+
+        /* BUTTON */
+
+        .btn{
+            margin-top:30px;
+            padding:14px 35px;
+            background:#c9956c;
+            color:white;
+            text-decoration:none;
+            border-radius:40px;
+            transition:0.3s ease;
+            font-weight:bold;
+            letter-spacing:1px;
+        }
+
+        .btn:hover{
+            background:#b07d55;
+            transform:translateY(-3px);
+            box-shadow:0 10px 20px rgba(201,149,108,0.4);
+        }
+
+        /* SECTIONS */
+
+        section{
+            padding:100px 10%;
+        }
+
+        section h2{
+            text-align:center;
+            margin-bottom:40px;
+            color:#f5ede4;
+            font-size:40px;
+        }
+
+        /* ABOUT */
+
+        .about-container{
+            background:#0a0a0a;
+            padding:35px;
+            border-radius:20px;
+            box-shadow:0 5px 15px rgba(0,0,0,0.3);
+            line-height:1.9;
+            transition:0.3s;
+            border:1px solid rgba(201,149,108,0.2);
+        }
+
+        .about-container:hover{
+            transform:translateY(-5px);
+        }
+
+        /* SKILLS */
+
+        .skills{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+            gap:20px;
+        }
+
+        .skill-box{
+            background:#0a0a0a;
+            padding:25px;
+            text-align:center;
+            border-radius:20px;
+            box-shadow:0 5px 15px rgba(0,0,0,0.3);
+            transition:0.3s;
+            font-weight:bold;
+            border:1px solid rgba(201,149,108,0.2);
+        }
+
+        .skill-box:hover{
+            transform:translateY(-8px);
+            background:#c9956c;
+            color:white;
+        }
+
+        /* PROJECTS */
+
+        .projects{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+            gap:20px;
+        }
+
+        .project-box{
+            background:#0a0a0a;
+            padding:30px;
+            border-radius:20px;
+            box-shadow:0 5px 15px rgba(0,0,0,0.3);
+            transition:0.3s;
+            border:1px solid rgba(201,149,108,0.2);
+        }
+
+        .project-box:hover{
+            transform:scale(1.03);
+        }
+
+        .project-box h3{
+            margin-bottom:15px;
+            color:#c9956c;
+        }
+
+        /* CONTACT */
+
+        .contact-box{
+            background:#0a0a0a;
+            padding:35px;
+            border-radius:20px;
+            text-align:center;
+            box-shadow:0 5px 15px rgba(0,0,0,0.3);
+            line-height:2;
+            border:1px solid rgba(201,149,108,0.2);
+        }
+
+        /* FOOTER */
+
+        footer{
+            background:#0a0a0a;
+            color:white;
+            text-align:center;
+            padding:20px;
+            margin-top:40px;
+        }
+
+        /* RESPONSIVE */
+
+        @media(max-width:768px){
+
+            nav{
+                flex-direction:column;
+                gap:10px;
+            }
+
+            nav ul{
+                flex-wrap:wrap;
+                justify-content:center;
+            }
+
+            .home h1{
+                font-size:38px;
+            }
+
+            .home h3{
+                font-size:22px;
+            }
+
+            .profile-pic{
+                width:180px;
+                height:180px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+
+    <nav>
+
+        <h2>X.N. ANSANO</h2>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+    </nav>
+
+    <!-- HOME -->
+
+    <section class="home" id="home">
+
+        <img src="Myprofile.png" alt="Profile Picture" class="profile-pic">
+
+        <h1>XANDRA NICOLE ANSANO</h1>
+
+        <h3>2nd Year BSIS Student</h3>
+
+        <p>
+            Hi! I'm a 2nd year BSIS student at Davao del Norte State College.
+            I'm into graphic design and I'm currently learning more about IT.
+        </p>
+
+        <a href="https://github.com/ansanoxandra" class="btn">
+            Visit My GitHub
+        </a>
+
+    </section>
+
+    <!-- ABOUT -->
+
+    <section id="about">
+
+        <h2>About Me</h2>
+
+        <div class="about-container">
+
+            <p>
+                Hi, I'm <strong>Xandra Nicole Ansano</strong>, a 2nd year BSIS student
+                at Davao del Norte State College.
+            </p>
+
+            <br>
+
+            <p>
+                I grew up around our family's printing business, ART-TECH Computer Services,
+                so I've been around design, colors, and layouts for a long time. That's probably
+                why I got into graphic design — it just felt natural.
+            </p>
+
+            <br>
+
+            <p>
+                I took Arts and Design in senior high school, and since then I've been into
+                poster-making, photo editing, and painting. Now that I'm in college, I'm also
+                starting to learn about coding and IT-related stuff.
+            </p>
+
+            <br>
+
+            <p>
+                I offer design services on the side — mostly tarpaulins, ID photo editing,
+                and document layouts. It's something I enjoy doing and I'm always open to
+                new projects.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- SKILLS -->
+
+    <section id="skills">
+
+        <h2>My Skills</h2>
+
+        <div class="skills">
+
+            <div class="skill-box">Adobe Photoshop</div>
+            <div class="skill-box">Canva</div>
+            <div class="skill-box">Poster Making</div>
+            <div class="skill-box">Acrylic Painting</div>
+            <div class="skill-box">MS Office Suite</div>
+            <div class="skill-box">Coding (Learning)</div>
+
+        </div>
+
+    </section>
+
+    <!-- PROJECTS -->
+
+    <section id="projects">
+
+        <h2>Projects</h2>
+
+        <div class="projects">
+
+            <div class="project-box">
+
+                <h3>Portfolio Website</h3>
+
+                <p>
+                    A personal portfolio website made with HTML and CSS.
+                </p>
+
+            </div>
+
+            <div class="project-box">
+
+                <h3>Google Site Portfolio</h3>
+
+                <p>
+                    An online portfolio I made using Google Sites to showcase
+                    my design services and work samples.
+                </p>
+
+            </div>
+
+            <div class="project-box">
+
+                <h3>Print & Layout Designs</h3>
+
+                <p>
+                    Tarpaulin layouts, ID photo editing, poster-making,
+                    and document formatting projects.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CONTACT -->
+
+    <section id="contact">
+
+        <h2>Contact Information</h2>
+
+        <div class="contact-box">
+
+            <p><strong>Name:</strong> Xandra Nicole Ansano</p>
+
+            <p><strong>Email:</strong> ansanoxandra@gmail.com</p>
+
+            <p><strong>GitHub:</strong> github.com/ansanoxandra</p>
+
+            <p><strong>Location:</strong> Davao del Norte, Philippines</p>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            © 2026 Xandra Nicole Ansano | Student Portfolio
+        </p>
+
+    </footer>
+
+</body>
+</html>
