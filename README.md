@@ -1,10 +1,8 @@
-# ♥ Hi there 👋 I'm Xandra Nicole Ansano ♥
+<h1 align="center" style="color:#00f7ff;">♥ Hi there 👋 I'm John Mark B. Genite ♥</h1>
 
 <p align="center">
-  <b>Davao del Norte State College</b>
+  <img src="https://readme-typing-svg.herokuapp.com?color=00F7FF&center=true&vCenter=true&width=650&lines=Information+Technology+Student;Web+Developer+in+Progress;Future+Software+Engineer;Davao+del+Norte+State+College" />
 </p>
-
-Hi there 👋 I'm Xandra Nicole Ansano
 
 Welcome to my GitHub! I'm a second-year BSIS student from Davao del Norte, aspiring graphic designer passionate about making visuals that don't just look good — they mean something.
 
@@ -38,5 +36,5 @@ My goal is to continue growing as a designer and IT professional, creating work 
 ### **Contact**
 
 - 📧 Email: ansanoxandra@gmail.com
-- 📍 Location: Davao del Norte, Philippines
+- 📍 Location: Panabo City, Davao del Norte, Philippines
 - 🔗 LinkedIn: [Xandra Nicole Ansano](http://www.linkedin.com/in/xandra-nicole-ansano-78208640a)
