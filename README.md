@@ -1,4 +1,4 @@
-# 🎨 Hi there 👋 I'm Xandra Nicole Ansano 🎨
+# ♥ Hi there 👋 I'm Xandra Nicole Ansano ♥
 
 <p align="center">
   <b>Davao del Norte State College</b>
@@ -8,7 +8,7 @@ Hi there 👋 I'm Xandra Nicole Ansano
 
 Welcome to my GitHub! I'm a second-year BSIS student from Davao del Norte, aspiring graphic designer passionate about making visuals that don't just look good — they mean something.
 
-### 🙋‍♀️ About Me
+### **About Me**
 
 Hello! My name is **XANDRA NICOLE ANSANO**, a second-year college student from Davao del Norte, currently studying Bachelor of Science in Information Systems (BSIS) at Davao del Norte State College.
 
@@ -26,7 +26,7 @@ My goal is to continue growing as a designer and IT professional, creating work 
 - 💻 **Google Site Portfolio** — An online portfolio built on Google Sites featuring my design services, work samples, and contact information.
 - 🎨 **Print & Layout Designs** — Various graphic design outputs including tarpaulin layouts, ID photo editing, poster-making, and document formatting.
 
-### ✨ Skills
+### **Skills**
 
 - Adobe Photoshop
 - Acrylic & Latex Painting
@@ -35,7 +35,7 @@ My goal is to continue growing as a designer and IT professional, creating work 
 - Microsoft Office Suite
 - Coding (Learning)
 
-### 📬 Contact
+### **Contact**
 
 - 📧 Email: ansanoxandra@gmail.com
 - 📍 Location: Davao del Norte, Philippines
